@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Buen Fin 2025 | Armavico</title>
+    <style>
+        /* BASE */
+        :root {
+            --primary-color: #00BCD4;
+            --secondary-color: #0097A7;
+            --light-bg: #f8f9fa;
+            --dark-text: #1a1a1a;
+            --medium-text: #555;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(to bottom, var(--light-bg), #e9ecef);
+            min-height: 100vh;
+            padding: 40px 20px;
+        }
+
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            background: white;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+            overflow: hidden;
+        }
+
+        /* HEADER */
+        .header {
+            background: linear-gradient(135deg, var(--primary-color) 0%, var(--secondary-color) 100%);
+            padding: 50px 40px;
+            text-align: center;
+        }
+
+        .logo-container {
+            background: white;
+            padding: 20px 40px;
+            display: inline-block;
+            border-radius: 5px;
+            margin-bottom: 30px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+
+        .logo {
+            width: 250px;
+            max-width: 100%;
+        }
+
+        .header h1 {
+            font-size: 3em;
+            margin-bottom: 10px;
+            color: white;
+            font-weight: 300;
+            letter-spacing: 2px;
+        }
+
+        .header .tagline {
+            font-size: 1.1em;
+            color: rgba(255,255,255,0.95);
+            font-weight: 300;
+            letter-spacing: 1px;
+        }
+
+        /* CONTENIDO PRINCIPAL */
+        .content {
+            padding: 60px 40px;
+        }
+
+        .intro-section {
+            text-align: center;
+            margin-bottom: 50px;
+        }
+
+        .intro-section h2 {
+            color: var(--dark-text);
+            margin-bottom: 20px;
+            font-size: 2em;
+            font-weight: 400;
+        }
+
+        .intro-section p {
+            color: var(--medium-text);
+            line-height: 1.8;
+            font-size: 1.15em;
+            max-width: 700px;
+            margin: 0 auto 30px;
+        }
+
+        .divider {
+            width: 60px;
+            height: 3px;
+            background: var(--primary-color);
+            margin: 30px auto;
+        }
+
+        .benefits {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 30px;
+            margin: 50px 0;
+        }
+
+        .benefit-item {
+            text-align: center;
+            padding: 30px 20px;
+            background: var(--light-bg);
+            border-left: 4px solid var(--primary-color);
+            transition: transform 0.3s ease;
+        }
+
+        .benefit-item:hover {
+            transform: translateY(-5px);
+        }
+
+        .benefit-item h3 {
+            color: var(--dark-text);
+            margin-bottom: 10px;
+            font-size: 1.3em;
+            font-weight: 500;
+        }
+
+        .benefit-item p {
+            color: #666;
+            font-size: 1em;
+            line-height: 1.6;
+        }
+
+        /* SECCIÓN DE DESCARGA */
+        .download-section {
+            background: var(--light-bg);
+            padding: 50px 40px;
+            text-align: center;
+            margin: 50px -40px 0;
+        }
+
+        .download-section h3 {
+            color: var(--dark-text);
+            font-size: 1.8em;
+            margin-bottom: 20px;
+            font-weight: 400;
+        }
+
+        .download-section p {
+            color: #666;
+            margin-bottom: 30px;
+            font-size: 1.1em;
+        }
+
+        .download-btn {
+            background: var(--primary-color);
+            color: white;
+            padding: 18px 50px;
+            border: none;
+            border-radius: 3px;
+            font-size: 1.1em;
+            cursor: pointer;
+            text-decoration: none;
+            display: inline-block;
+            transition: all 0.3s ease;
+            font-weight: 500;
+            letter-spacing: 0.5px;
+            text-transform: uppercase;
+        }
+
+        .download-btn:hover {
+            background: var(--secondary-color);
+            box-shadow: 0 4px 15px rgba(0,188,212,0.3);
+        }
+
+        .download-btn:active {
+            transform: translateY(1px);
+        }
+
+        /* FOOTER */
+        .footer {
+            background: var(--dark-text);
+            padding: 30px 40px;
+            text-align: center;
+        }
+
+        .footer p {
+            color: var(--primary-color);
+            margin: 5px 0;
+            font-size: 0.95em;
+        }
+
+        .footer .copyright {
+            color: #888;
+            font-size: 0.9em;
+            margin-top: 10px;
+        }
+
+        /* RESPONSIVE DESIGN */
+        @media (max-width: 768px) {
+            body {
+                padding: 20px 10px;
+            }
+
+            .header {
+                padding: 40px 20px;
+            }
+
+            .header h1 {
+                font-size: 2em;
+            }
+
+            .content {
+                padding: 40px 20px;
+            }
+
+            .download-section {
+                padding: 40px 20px;
+                margin: 40px -20px 0;
+            }
+
+            .benefits {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <div class="logo-container">
+                <img src="armavico.jpg" class="logo" alt="Logo de Armavico">
+            </div>
+            <h1>BUEN FIN 2025</h1>
+            <p class="tagline">Cerámica & Porcelanato que Trascienden el Diseño</p>
+        </div>
+
+        <div class="content">
+            <div class="intro-section">
+                <h2>La Oportunidad de Invertir en su Visión</h2>
+                <div class="divider"></div>
+                <p>Este Buen Fin, Armavico le ofrece la llave para concretar proyectos de alto valor. Descubra cómo la **calidad premium** y la **excelencia en diseño** de nuestros recubrimientos se alinean con sus objetivos a largo plazo. Es el momento ideal para dar el paso hacia la transformación.</p>
+            </div>
+
+            <div class="benefits">
+                <div class="benefit-item">
+                    <h3>Impacto y Durabilidad</h3>
+                    <p>Recubrimientos seleccionados para garantizar la longevidad y la máxima resistencia en cualquier ambiente.</p>
+                </div>
+                <div class="benefit-item">
+                    <h3>Diseño de Vanguardia</h3>
+                    <p>Tendencias estéticas y soluciones que definen espacios modernos y atemporales, elevando el valor de su propiedad.</p>
+                </div>
+                <div class="benefit-item">
+                    <h3>Socios en su Proyecto</h3>
+                    <p>Asesoría experta dedicada a optimizar su presupuesto y asegurar la elección perfecta para cada requerimiento técnico.</p>
+                </div>
+            </div>
+
+            <div class="download-section">
+                <h3>Descubra la Colección Exclusiva</h3>
+                <p>Acceda al resumen detallado con nuestras condiciones de adquisición más ventajosas y las novedades.</p>
+                
+                <a 
+                    href="BuenFinArmavico.pdf" 
+                    download="Catalogo_Armavico_Buen_Fin.pdf" 
+                    class="download-btn"
+                >
+                    Descargar Guía de Oportunidades
+                </a>
+                
+            </div>
+        </div>
+
+        <div class="footer">
+            <p><strong>ARMAVICO</strong></p>
+            <p>Cerámica & Porcelanato</p>
+            <p class="copyright">© 2025 Todos los derechos reservados</p>
+        </div>
+    </div>
+</body>
+</html>
